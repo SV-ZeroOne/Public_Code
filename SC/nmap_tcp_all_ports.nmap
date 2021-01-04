@@ -1,0 +1,56 @@
+# Nmap 7.91 scan initiated Thu Dec 24 07:24:44 2020 as: nmap -sS -sV -vv -p- -oA tcp_all 10.0.0.1
+Nmap scan report for 10.0.0.1
+Host is up, received syn-ack ttl 54 (0.010s latency).
+Scanned at 2020-12-24 07:24:45 EST for 306s
+Not shown: 65523 filtered ports
+Reason: 65523 no-responses
+PORT      STATE  SERVICE     REASON         VERSION
+19/tcp    open   chargen     syn-ack ttl 54 Linux chargen
+22/tcp    open   ssh         syn-ack ttl 53 OpenSSH 7.2p2 Ubuntu 4ubuntu2.8 (Ubuntu Linux; protocol 2.0)
+23/tcp    closed telnet      reset ttl 53
+53/tcp    open   domain      syn-ack ttl 53 ISC BIND 9.10.3-P4 (Ubuntu Linux)
+80/tcp    open   http        syn-ack ttl 53 nginx 1.10.3 (Ubuntu)
+111/tcp   closed rpcbind     reset ttl 54
+161/tcp   closed snmp        reset ttl 54
+443/tcp   open   ssl/http    syn-ack ttl 53 nginx 1.10.3 (Ubuntu)
+500/tcp   closed isakmp      reset ttl 53
+4444/tcp  closed krb524      reset ttl 54
+8080/tcp  open   http-proxy? syn-ack ttl 53
+10000/tcp open   http        syn-ack ttl 53 nginx 1.10.3 (Ubuntu)
+1 service unrecognized despite returning data. If you know the service/version, please submit the following fingerprint at https://nmap.org/cgi-bin/submit.cgi?new-service :
+SF-Port8080-TCP:V=7.91%I=7%D=12/24%Time=5FE48900%P=x86_64-pc-linux-gnu%r(N
+SF:ULL,25,"\[i\]\x20Welcome!\x20Type\x20HELP\x20for\x20commands\.\n")%r(Ge
+SF:tRequest,4C,"\[i\]\x20Welcome!\x20Type\x20HELP\x20for\x20commands\.\n\[
+SF:i\]\x20Available\x20Commands:\nHELP\nTIME\nEXIT\n")%r(HTTPOptions,4C,"\
+SF:[i\]\x20Welcome!\x20Type\x20HELP\x20for\x20commands\.\n\[i\]\x20Availab
+SF:le\x20Commands:\nHELP\nTIME\nEXIT\n")%r(RTSPRequest,4C,"\[i\]\x20Welcom
+SF:e!\x20Type\x20HELP\x20for\x20commands\.\n\[i\]\x20Available\x20Commands
+SF::\nHELP\nTIME\nEXIT\n")%r(FourOhFourRequest,4C,"\[i\]\x20Welcome!\x20Ty
+SF:pe\x20HELP\x20for\x20commands\.\n\[i\]\x20Available\x20Commands:\nHELP\
+SF:nTIME\nEXIT\n")%r(Socks5,4C,"\[i\]\x20Welcome!\x20Type\x20HELP\x20for\x
+SF:20commands\.\n\[i\]\x20Available\x20Commands:\nHELP\nTIME\nEXIT\n")%r(S
+SF:ocks4,4C,"\[i\]\x20Welcome!\x20Type\x20HELP\x20for\x20commands\.\n\[i\]
+SF:\x20Available\x20Commands:\nHELP\nTIME\nEXIT\n")%r(GenericLines,4C,"\[i
+SF:\]\x20Welcome!\x20Type\x20HELP\x20for\x20commands\.\n\[i\]\x20Available
+SF:\x20Commands:\nHELP\nTIME\nEXIT\n")%r(RPCCheck,4C,"\[i\]\x20Welcome!\x2
+SF:0Type\x20HELP\x20for\x20commands\.\n\[i\]\x20Available\x20Commands:\nHE
+SF:LP\nTIME\nEXIT\n")%r(DNSVersionBindReqTCP,4C,"\[i\]\x20Welcome!\x20Type
+SF:\x20HELP\x20for\x20commands\.\n\[i\]\x20Available\x20Commands:\nHELP\nT
+SF:IME\nEXIT\n")%r(DNSStatusRequestTCP,4C,"\[i\]\x20Welcome!\x20Type\x20HE
+SF:LP\x20for\x20commands\.\n\[i\]\x20Available\x20Commands:\nHELP\nTIME\nE
+SF:XIT\n")%r(Help,4C,"\[i\]\x20Welcome!\x20Type\x20HELP\x20for\x20commands
+SF:\.\n\[i\]\x20Available\x20Commands:\nHELP\nTIME\nEXIT\n")%r(SSLSessionR
+SF:eq,4C,"\[i\]\x20Welcome!\x20Type\x20HELP\x20for\x20commands\.\n\[i\]\x2
+SF:0Available\x20Commands:\nHELP\nTIME\nEXIT\n")%r(TerminalServerCookie,4C
+SF:,"\[i\]\x20Welcome!\x20Type\x20HELP\x20for\x20commands\.\n\[i\]\x20Avai
+SF:lable\x20Commands:\nHELP\nTIME\nEXIT\n")%r(TLSSessionReq,4C,"\[i\]\x20W
+SF:elcome!\x20Type\x20HELP\x20for\x20commands\.\n\[i\]\x20Available\x20Com
+SF:mands:\nHELP\nTIME\nEXIT\n")%r(Kerberos,4C,"\[i\]\x20Welcome!\x20Type\x
+SF:20HELP\x20for\x20commands\.\n\[i\]\x20Available\x20Commands:\nHELP\nTIM
+SF:E\nEXIT\n")%r(SMBProgNeg,4C,"\[i\]\x20Welcome!\x20Type\x20HELP\x20for\x
+SF:20commands\.\n\[i\]\x20Available\x20Commands:\nHELP\nTIME\nEXIT\n");
+Service Info: OS: Linux; CPE: cpe:/o:linux:linux_kernel
+
+Read data files from: /usr/bin/../share/nmap
+Service detection performed. Please report any incorrect results at https://nmap.org/submit/ .
+# Nmap done at Thu Dec 24 07:29:51 2020 -- 1 IP address (1 host up) scanned in 307.18 seconds
